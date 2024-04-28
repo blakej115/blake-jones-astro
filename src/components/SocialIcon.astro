@@ -1,0 +1,17 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<li>
+  <a
+    class="block max-w-[clamp(26px,3.76vw,40px)] [&_svg]:w-full [&_svg]:fill-white"
+    href={href}
+    {...!href.startsWith("mailto:") ? { target: "_blank" } : {}}
+  >
+    <slot />
+  </a>
+</li>
