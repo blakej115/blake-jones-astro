@@ -16,7 +16,7 @@ export default {
       black: "#000",
       blue: {
         DEFAULT: "#00b2ff",
-        dark: "#253a4f",
+        dark: "#3e566f",
       },
     },
     extend: {
