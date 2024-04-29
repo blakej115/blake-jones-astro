@@ -8,7 +8,7 @@ const { href } = Astro.props;
 
 <li>
   <a
-    class="block max-w-[clamp(26px,3.76vw,40px)] [&_svg]:w-full [&_svg]:fill-white"
+    class="block max-w-[clamp(26px,3.76vw,40px)] transition-transform hover:rotate-360 hover:scale-150 [&_svg]:w-full [&_svg]:fill-white"
     href={href}
     {...!href.startsWith("mailto:") ? { target: "_blank" } : {}}
   >

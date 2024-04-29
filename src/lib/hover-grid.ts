@@ -28,7 +28,7 @@ export function gridY(y: number): number {
 
 export const rotateClasses: string[] = gridTotal.map(
   (i: number): string =>
-    `group-has-[>_div:first-of-type_>div:nth-of-type(${i + 1}):hover]:[transform:rotateX(${gridX(i)}deg)_rotateY(${gridY(i)}deg)]`,
+    `group-has-[>:first-child>:nth-child(${i + 1}):hover]:[transform:rotateX(${gridX(i)}deg)_rotateY(${gridY(i)}deg)]`,
 );
 
 const gridSafelist: string[] = [

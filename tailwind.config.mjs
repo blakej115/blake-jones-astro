@@ -20,6 +20,12 @@ export default {
       },
     },
     extend: {
+      rotate: {
+        360: "360deg",
+      },
+      scale: {
+        115: "1.15",
+      },
       transitionDuration: {
         DEFAULT: "400ms",
       },
