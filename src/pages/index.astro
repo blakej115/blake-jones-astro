@@ -2,15 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Logo from "../components/Logo.astro";
 import SocialIcons from "../components/SocialIcons.astro";
+import HoverGrid from "../components/HoverGrid.astro";
 ---
 
 <Layout title="Blake Jones">
   <main
-    class="flex min-h-screen flex-col items-center justify-center gap-y-8 px-8 py-16"
+    class="group flex min-h-screen flex-col items-center justify-center gap-y-[clamp(2rem,6.02vw,4rem)] px-8 py-16"
   >
+    <HoverGrid />
     <Logo />
     <h2
-      class="max-w-[650px] text-center text-[clamp(22px,4.14vw,44px)] font-bold"
+      class="relative max-w-[650px] text-center text-[clamp(22px,4.14vw,44px)] font-bold"
     >
       Director of Web Development at <a
         href="https://riverworksmarketing.com/"

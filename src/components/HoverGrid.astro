@@ -1,0 +1,29 @@
+---
+import {
+  gridBase,
+  gridTotal,
+  gridDebug,
+  gridX,
+  gridY,
+} from "../lib/hover-grid";
+---
+
+<div
+  class={`absolute inset-0 grid grid-cols-[repeat(${gridBase},minmax(0,1fr))] grid-rows-[repeat(${gridBase},minmax(0,1fr))] ${gridDebug ? `z-10` : ``}`}
+>
+  {
+    gridTotal.map((i: number) => (
+      <>
+        {!gridDebug ? (
+          <div />
+        ) : (
+          <div class="bg-black/75 border font-bold">
+            x: {gridX(i)}
+            <br />
+            y: {gridY(i)}
+          </div>
+        )}
+      </>
+    ))
+  }
+</div>
