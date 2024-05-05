@@ -1,4 +1,5 @@
-export const gridDebug: boolean = false;
+export const gridDebug: boolean =
+  import.meta.env.GRID_DEBUG === "true" ? true : false;
 
 export const gridBase: number = 21;
 

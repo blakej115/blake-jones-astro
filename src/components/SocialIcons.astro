@@ -15,42 +15,45 @@ import X from "./icons/X.astro";
 ---
 
 <ul
-  class="relative flex flex-wrap items-center justify-center gap-[clamp(1rem,3.01vw,2rem)]"
+  class="relative flex animate-social-icons flex-wrap items-center justify-center gap-social-icons [animation-timeline:scroll()]"
 >
-  <SocialIcon href="mailto:blake@riverworks.biz">
+  <SocialIcon href="mailto:blake@riverworks.biz" label="Email">
     <Email />
   </SocialIcon>
-  <SocialIcon href="https://github.com/blakej115">
+  <SocialIcon href="https://github.com/blakej115" label="GitHub">
     <Github />
   </SocialIcon>
-  <SocialIcon href="https://gitlab.com/blakej115">
+  <SocialIcon href="https://gitlab.com/blakej115" label="GitLab">
     <Gitlab />
   </SocialIcon>
-  <SocialIcon href="https://www.linkedin.com/in/blakej115/">
+  <SocialIcon href="https://www.linkedin.com/in/blakej115/" label="LinkedIn">
     <LinkedIn />
   </SocialIcon>
-  <SocialIcon href="https://m.me/blakej115">
+  <SocialIcon href="https://m.me/blakej115" label="Facebook Messenger">
     <Messenger />
   </SocialIcon>
-  <SocialIcon href="https://www.snapchat.com/add/thejoneslife">
+  <SocialIcon href="https://www.snapchat.com/add/thejoneslife" label="Snapchat">
     <Snapchat />
   </SocialIcon>
-  <SocialIcon href="https://discord.com/users/131066536889679872">
+  <SocialIcon
+    href="https://discord.com/users/131066536889679872"
+    label="Discord"
+  >
     <Discord />
   </SocialIcon>
-  <SocialIcon href="https://steamcommunity.com/id/blakej">
+  <SocialIcon href="https://steamcommunity.com/id/blakej" label="Steam">
     <Steam />
   </SocialIcon>
-  <SocialIcon href="https://www.facebook.com/blakej115">
+  <SocialIcon href="https://www.facebook.com/blakej115" label="Facebook">
     <Facebook />
   </SocialIcon>
-  <SocialIcon href="https://x.com/blakej115">
+  <SocialIcon href="https://x.com/blakej115" label="X">
     <X />
   </SocialIcon>
-  <SocialIcon href="https://www.instagram.com/blakej115/">
+  <SocialIcon href="https://www.instagram.com/blakej115/" label="Instagram">
     <Instagram />
   </SocialIcon>
-  <SocialIcon href="https://www.threads.net/@blakej115">
+  <SocialIcon href="https://www.threads.net/@blakej115" label="Threads">
     <Threads />
   </SocialIcon>
 </ul>

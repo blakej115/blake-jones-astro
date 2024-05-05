@@ -12,12 +12,18 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Blake Jones is Director of Web Development at Riverworks Marketing."
+    />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-blue-dark leading-[initial] text-white">
+  <body
+    class="min-h-screen bg-blue-dark text-body text-white supports-[animation-timeline:scroll()]:h-[200vh]"
+  >
     <slot />
   </body>
 </html>

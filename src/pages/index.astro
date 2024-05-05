@@ -7,17 +7,32 @@ import HoverGrid from "../components/HoverGrid.astro";
 
 <Layout title="Blake Jones">
   <main
-    class="group flex min-h-screen flex-col items-center justify-center gap-y-[clamp(2rem,6.02vw,4rem)] px-8 py-16"
+    class="group fixed inset-0 flex flex-col items-center justify-center gap-y-main px-8 py-16"
   >
     <HoverGrid />
     <Logo />
-    <h2 class="relative text-center text-[clamp(22px,4.14vw,44px)] font-bold">
+    <h1
+      class="relative animate-tagline text-center text-tagline font-bold [animation-timeline:scroll()]"
+    >
       Director of Web Development at <a
         class="block transition-transform hover:scale-115"
         href="https://riverworksmarketing.com/"
         target="_blank">Riverworks Marketing</a
       >
-    </h2>
+    </h1>
     <SocialIcons />
+    <footer
+      class="relative animate-footer text-center [animation-timeline:scroll()]"
+    >
+      Built with <a
+        class="inline-block transition-transform hover:scale-110"
+        href="https://astro.build/"
+        target="_blank">Astro</a
+      > & <a
+        class="inline-block transition-transform hover:scale-110"
+        href="https://tailwindcss.com/"
+        target="_blank">Tailwind</a
+      >. This website serves no JavaScript.
+    </footer>
   </main>
 </Layout>
