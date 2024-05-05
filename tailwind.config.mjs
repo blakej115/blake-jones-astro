@@ -52,41 +52,41 @@ export default {
           "0%": {
             transform: "translateY(96.5%)",
           },
-          "20%": {
+          "25%": {
             transform: "translateY(0)",
           },
         },
         tagline: {
-          "0%, 20%": {
+          "0%, 25%": {
             opacity: "0",
             visibility: "hidden",
             transform: "scale(0)",
           },
-          "40%": {
+          "50%": {
             opacity: "1",
             visibility: "visible",
             transform: "scale(1)",
           },
         },
         "social-icons": {
-          "0%, 40%": {
+          "0%, 50%": {
             opacity: "0",
             visibility: "hidden",
             transform: "scale(0)",
           },
-          "60%": {
+          "75%": {
             opacity: "1",
             visibility: "visible",
             transform: "scale(1)",
           },
         },
         footer: {
-          "0%, 60%": {
+          "0%, 75%": {
             opacity: "0",
             visibility: "hidden",
             transform: "scale(0)",
           },
-          "80%": {
+          "100%": {
             opacity: "1",
             visibility: "visible",
             transform: "scale(1)",
@@ -94,10 +94,10 @@ export default {
         },
       },
       animation: {
-        logo: "logo auto linear",
-        tagline: "tagline auto linear",
-        "social-icons": "social-icons auto linear",
-        footer: "footer auto linear",
+        logo: "logo 2s linear",
+        tagline: "tagline 2s linear",
+        "social-icons": "social-icons 2s linear",
+        footer: "footer 2s linear",
       },
     },
   },
