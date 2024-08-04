@@ -92,12 +92,36 @@ export default {
             transform: "scale(1)",
           },
         },
+        "arrow-holder": {
+          "0%, 75%": {
+            opacity: "1",
+          },
+          "100%": {
+            opacity: "0",
+          },
+        },
+        arrow: {
+          "0%": {
+            transform: "translateY(-2rem) scale(.5)",
+            opacity: "0",
+          },
+          "50%": {
+            transform: "translateY(0) scale(1)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(2rem) scale(.5)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
         logo: "logo 2s linear",
         tagline: "tagline 2s linear",
         "social-icons": "social-icons 2s linear",
         footer: "footer 2s linear",
+        "arrow-holder": "arrow-holder 2s linear",
+        arrow: "arrow 1s linear infinite",
       },
     },
   },

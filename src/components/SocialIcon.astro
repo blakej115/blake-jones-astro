@@ -1,19 +1,29 @@
 ---
 interface Props {
-  href: string;
+  href?: string;
   label: string;
+  tooltip?: string;
 }
 
-const { href, label } = Astro.props;
+const { href, label, tooltip } = Astro.props;
+
+const Link = href ? "a" : "span";
 ---
 
 <li>
   <a
-    class="block max-w-social-icon transition-transform hover:rotate-360 hover:scale-150 [&_svg]:w-full [&_svg]:fill-white"
+    class="group/social-icon relative block max-w-social-icon [&_svg]:w-full [&_svg]:fill-white [&_svg]:transition-transform hover:[&_svg]:rotate-360 hover:[&_svg]:scale-150"
     href={href}
-    {...!href.startsWith("mailto:") ? { target: "_blank" } : {}}
+    {...!href?.startsWith("mailto:") ? { target: "_blank" } : {}}
     aria-label={label}
   >
+    {
+      tooltip && (
+        <span class="pointer-events-none absolute -top-12 left-1/2 block -translate-x-1/2 scale-75 rounded-md bg-white px-2 py-1 text-[14px] text-blue-dark opacity-0 drop-shadow-[0_0_2px_rgba(0,0,0,.25)] transition after:absolute after:left-1/2 after:top-full after:h-0 after:w-0 after:-translate-x-1/2 after:border-b-0 after:border-l-[6px] after:border-r-[6px] after:border-t-[8px] after:border-transparent after:border-t-white group-hover/social-icon:scale-100 group-hover/social-icon:opacity-100">
+          {tooltip}
+        </span>
+      )
+    }
     <slot />
   </a>
 </li>
